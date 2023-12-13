@@ -4,7 +4,7 @@ import Hotel from "../models/Hotel.js";
 const router = express.Router();
 
 // create
-router.post("/", async (req, res) => {
+router.post("/new", async (req, res) => {
     const newHotel = new Hotel(req.body);
 
     try {
